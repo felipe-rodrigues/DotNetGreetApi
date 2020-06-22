@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WelcomeApi.Integration.Test", "WelcomeApi.Integration.Test\WelcomeApi.Integration.Test.csproj", "{5752D36F-C394-4EE0-8DFC-C0E189803703}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WelcomeApi", "WelcomeApi\WelcomeApi.csproj", "{81BB8C46-2FBB-4F28-9D34-BEEA64F813C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5752D36F-C394-4EE0-8DFC-C0E189803703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5752D36F-C394-4EE0-8DFC-C0E189803703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5752D36F-C394-4EE0-8DFC-C0E189803703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5752D36F-C394-4EE0-8DFC-C0E189803703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BB8C46-2FBB-4F28-9D34-BEEA64F813C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BB8C46-2FBB-4F28-9D34-BEEA64F813C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BB8C46-2FBB-4F28-9D34-BEEA64F813C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BB8C46-2FBB-4F28-9D34-BEEA64F813C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9512156-95B8-4C96-8D0F-4C0DD5231EDF}
+	EndGlobalSection
+EndGlobal
