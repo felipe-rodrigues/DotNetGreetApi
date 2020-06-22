@@ -17,5 +17,11 @@ namespace DotNetIntegrationTestCI.Controllers
         {
             return "Hello World";
         }
+
+        [HttpGet("hi")]
+        public string SayHi()
+        {
+            return "Hi";
+        }
     }
 }
