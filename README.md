@@ -1,7 +1,7 @@
 # DotNetIntegrationTestCI
 
 Aplicação com testes de integração em api.
-Com CI conifurado pelo githu
+Com CI configurado pelo githu
 
 
 ### Status do Build e Testes :
