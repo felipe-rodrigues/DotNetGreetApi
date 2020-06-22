@@ -1,21 +1,19 @@
-﻿using DotNetIntegrationTestCI;
-using Microsoft.AspNetCore.Mvc.Testing;
+﻿using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace WelcomeApi.Integration.Test
 {
-    public class WelcomeControllerTest
+    public class WelcomeControllerTest : IClassFixture<HttpClientBase>
     {
-        public readonly HttpClient HttpClient;
+        public readonly HttpClientBase ClientBase;
         public WebApplicationFactory<Startup> appFactory;
+        public HttpClient HttpClient => this.ClientBase.HttpClient;
 
-        public WelcomeControllerTest()
+        public WelcomeControllerTest(HttpClientBase httpClientBase)
         {
-            appFactory = new WebApplicationFactory<Startup>();
-
-            HttpClient = appFactory.CreateClient();
+            ClientBase = httpClientBase;
         }
 
 
@@ -32,7 +30,7 @@ namespace WelcomeApi.Integration.Test
 
 
         [Fact]
-        public async Task DefaultRoute_ShouldReturnHiString()
+        public async Task HiRoute_ShouldReturnHiString()
         {
             var req = await HttpClient.GetAsync("/api/welcome/hi");
 
