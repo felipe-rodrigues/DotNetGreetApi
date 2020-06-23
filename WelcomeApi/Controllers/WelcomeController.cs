@@ -18,5 +18,11 @@ namespace WelcomeApi.Controllers
         {
             return "Hi";
         }
+
+        [HttpGet("ola")]
+        public string SayOla()
+        {
+            return "Ola";
+        }
     }
 }

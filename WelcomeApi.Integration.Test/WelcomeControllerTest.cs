@@ -39,5 +39,16 @@ namespace WelcomeApi.Integration.Test
 
             Assert.Equal("Hi", response);
         }
+
+        [Fact]
+        public async Task OlaRoute_ShouldReturnOlaString()
+        {
+            var req = await HttpClient.GetAsync("/api/welcome/ola");
+
+            Assert.True(req.IsSuccessStatusCode);
+            var response = await req.Content.ReadAsStringAsync();
+
+            Assert.Equal("Ola", response);
+        }
     }
 }
