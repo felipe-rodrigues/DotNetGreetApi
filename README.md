@@ -1,4 +1,4 @@
-# DotNetIntegrationTestCI
+# GreetAPI
 
 Aplicação com testes de integração em api.
 Com CI configurado pelo github
