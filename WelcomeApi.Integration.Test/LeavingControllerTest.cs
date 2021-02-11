@@ -5,14 +5,14 @@ using Xunit;
 
 namespace WelcomeApi.Integration.Test
 {
-    public class LeavinControllerTest : IClassFixture<HttpClientBase>
+    public class LeavingControllerTest : IClassFixture<HttpClientBase>
     {
         public readonly HttpClientBase ClientBase;
         public WebApplicationFactory<Startup> appFactory;
         public HttpClient HttpClient => this.ClientBase.HttpClient;
 
 
-        public LeavinControllerTest(HttpClientBase httpClientBase)
+        public LeavingControllerTest(HttpClientBase httpClientBase)
         {
             ClientBase = httpClientBase;
         }
